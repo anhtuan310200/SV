@@ -1,0 +1,134 @@
+/* 1. Cài đặt chung cho toàn bộ trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a; /* Màu nền tối chủ đạo */
+}
+
+/* 2. Khung bao ngoài tạo hiệu ứng viền sáng */
+.box {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden; /* Giữ hiệu ứng chạy bên trong khung */
+}
+
+/* Hiệu ứng dải màu xoay tròn (Xanh) */
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+/* Hiệu ứng dải màu xoay tròn (Hồng) */
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #ff2d75, #ff2d75);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s; /* Chạy lệch pha 3 giây để tạo 2 màu đối xứng */
+}
+
+@keyframes animate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 3. Lớp nền phía trên để che bớt dải màu, chỉ để lộ viền 2px */
+.login {
+    position: absolute;
+    inset: 2px; 
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+h2 i { color: #ff2d75; margin: 0 5px; }
+
+/* 4. Định dạng các ô nhập liệu (Input) */
+input {
+    width: 100%;
+    background: #1c1c1c;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Nút Sign In */
+input[type="submit"] {
+    background: #45f3ff;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.5s; /* Giúp hiệu ứng hover mượt mà hơn */
+}
+
+/* --- MÃ B: HIỆU ỨNG KHI DI CHUỘT VÀO NÚT --- */
+input[type="submit"]:hover {
+    box-shadow: 0 0 20px #45f3ff; /* Phát sáng xung quanh nút */
+    filter: brightness(1.1);      /* Làm nút sáng hơn */
+    letter-spacing: 0.05em;       /* Chữ giãn ra nhẹ */
+}
+
+/* 5. Các liên kết quên mật khẩu/đăng ký */
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.group a {
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.group a:last-child { color: #ff2d75; }
+
+/* --- MÃ A: TƯƠNG THÍCH ĐIỆN THOẠI (DƯỚI CÙNG FILE) --- */
+@media (max-width: 480px) {
+    .box {
+        width: 320px; 
+        height: 400px;
+    }
+    .login {
+        padding: 40px 30px;
+    }
+}
