@@ -1,0 +1,86 @@
+{
+  "classes": {
+    "Y1_A": { "cp": 1001, "name": "1-A", "year": 1 },
+    "Y1_B": { "cp": 1000, "name": "1-B", "year": 1 },
+    "Y1_C": { "cp": 1000, "name": "1-C", "year": 1 },
+    "Y1_D": { "cp": 1000, "name": "1-D", "year": 1 },
+    "Y2_A": { "cp": 1000, "name": "2-A", "year": 2 },
+    "Y2_B": { "cp": 1000, "name": "2-B", "year": 2 },
+    "Y2_C": { "cp": 1000, "name": "2-C", "year": 2 },
+    "Y2_D": { "cp": 1000, "name": "2-D", "year": 2 },
+    "Y3_A": { "cp": 1000, "name": "3-A", "year": 3 },
+    "Y3_B": { "cp": 1000, "name": "3-B", "year": 3 },
+    "Y3_C": { "cp": 1000, "name": "3-C", "year": 3 },
+    "Y3_D": { "cp": 1000, "name": "3-D", "year": 3 },
+    "Y4_A": { "cp": 1000, "name": "4-A", "year": 4 },
+    "Y4_B": { "cp": 1000, "name": "4-B", "year": 4 },
+    "Y4_C": { "cp": 1000, "name": "4-C", "year": 4 },
+    "Y4_D": { "cp": 1000, "name": "4-D", "year": 4 }
+  },
+  "messages": {
+    "msg_1775463986282": {
+      "adminReply": "ngu",
+      "reason": "ngháo",
+      "senderName": "csp",
+      "senderUid": "1b3",
+      "status": "REJECTED",
+      "targetUid": "4a1",
+      "timestamp": "15:26:26 6/4/2026"
+    },
+    "msg_1775465286422": {
+      "adminReply": "",
+      "reason": "ngháo",
+      "senderName": "Yan",
+      "senderUid": "1a1",
+      "status": "APPROVED",
+      "targetUid": "1"
+    },
+    "msg_1775466748769": {
+      "adminReply": "",
+      "reason": "láo",
+      "senderName": "Yan",
+      "senderUid": "1a1",
+      "status": "REJECTED",
+      "targetUid": "4a1"
+    }
+  },
+  "quests": {
+    "Q_1775472387114": {
+      "correctOpt": "A",
+      "joined": 0,
+      "limit": 1,
+      "maxAttempts": 1,
+      "optA": "1",
+      "optB": "1.1",
+      "penaltyPP": 1,
+      "question": "chọn 1",
+      "rewardPP": 1000000,
+      "status": "OPEN",
+      "title": "diểm free"
+    }
+  },
+  "users": {
+    "1a1": {
+      "academic": {
+        "Year1_Sem2": {
+          "sub_1775471932819": {
+            "bth": 10, "ck": 6, "final": 7.3, "gk": 8, "grade": "B", "name": "Kinh tế"
+          }
+        }
+      },
+      "avatar": "", "class": "1-A", "classKey": "Y1_A", "locked": false, "name": "Chề Siều Phụng", "pass": "123", "pp": 0, "role": "STUDENT", "sem": 1, "stats": [ 50, 50, 50, 50, 50 ], "year": 1
+    },
+    "1a2": { "class": "1-A", "classKey": "Y1_A", "locked": false, "name": "Suzune Horikita", "pass": "123", "pp": 50000, "role": "STUDENT", "stats": [ 95, 80, 85, 90, 85 ], "year": 1 },
+    "1a3": { "class": "1-A", "classKey": "Y1_A", "locked": false, "name": "Kikyo Kushida", "pass": "123", "pp": 70000, "role": "STUDENT", "stats": [ 70, 90, 95, 80, 75 ], "year": 1 },
+    "1b3": { "class": "1-B", "classKey": "Y1_B", "locked": false, "name": "csp", "pass": "123", "pp": 94999, "role": "STUDENT", "sem": 1, "stats": [ 50, 50, 50, 50, 50 ], "year": 1 },
+    "2a1": { "class": "2-A", "classKey": "Y2_A", "locked": false, "name": "Ayanokoji Kiyotaka", "pass": "123", "pp": 998999, "role": "STUDENT", "stats": [ 50, 50, 50, 50, 50 ], "year": 2 },
+    "2a3": { "class": "2-A", "classKey": "Y2_A", "locked": false, "name": "Yosuke Hirata", "pass": "123", "pp": 119000, "role": "STUDENT", "stats": [ 85, 90, 90, 85, 80 ], "year": 2 },
+    "3a1": { "class": "3-A", "classKey": "Y3_A", "locked": false, "name": "Honami Ichinose", "pass": "123", "pp": 500000, "role": "STUDENT", "stats": [ 90, 80, 95, 90, 85 ], "year": 3 },
+    "3a2": { "class": "3-A", "classKey": "Y3_A", "locked": false, "name": "Ryuji Kanzaki", "pass": "123", "pp": 80000, "role": "STUDENT", "stats": [ 85, 85, 80, 80, 80 ], "year": 3 },
+    "3a3": { "class": "3-A", "classKey": "Y3_A", "locked": false, "name": "Mako Amikura", "pass": "123", "pp": 30000, "role": "STUDENT", "stats": [ 60, 60, 70, 70, 65 ], "year": 3 },
+    "4a1": { "class": "4-A", "classKey": "Y4_A", "locked": false, "name": "Miyabi Nagumo", "pass": "123", "pp": 2500013, "role": "STUDENT", "stats": [ 95, 95, 99, 90, 90 ], "year": 4 },
+    "4a2": { "class": "4-A", "classKey": "Y4_A", "locked": false, "name": "Ikuto Kiriyama", "pass": "123", "pp": 150000, "role": "STUDENT", "stats": [ 85, 80, 85, 85, 85 ], "year": 4 },
+    "4a3": { "class": "4-A", "classKey": "Y4_A", "locked": false, "name": "Nazuna Asahina", "pass": "123", "pp": 200000, "role": "STUDENT", "stats": [ 75, 70, 80, 80, 80 ], "year": 4 },
+    "teacher": { "name": "anyankun", "pass": "admin", "role": "TEACHER" }
+  }
+}
